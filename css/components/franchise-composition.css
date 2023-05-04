@@ -1,0 +1,102 @@
+.franchise-composition__inner {
+  margin-bottom: 36px;
+}
+.franchise-composition__content {
+  margin-top: 41px;
+}
+.franchise-composition__title {
+  margin-bottom: 28px;
+}
+.franchise-composition__list {
+  position: relative;
+  counter-reset: franchise-composition__list;
+}
+.franchise-composition__slider::after {
+  content: "";
+
+  position: absolute;
+  right: -10%;
+  top: -8%;
+  bottom: 0;
+  width: 200px;
+  height: 120%;
+  z-index: 5;
+
+  background-image: url(./../../images/blur-bg.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  filter: blur(10px);
+}
+.franchise-composition__item {
+  min-height: 130px;
+  box-sizing: border-box;
+  padding: 15px 10px 10px 21px;
+}
+.franchise-composition__item-title::before {
+  counter-increment: franchise-composition__list;
+  content: counter(franchise-composition__list) ".";
+
+  font-size: inherit;
+  line-height: 110%;
+  font-weight: 500;
+  font-family: "Mulish";
+}
+/*     
+    */
+.franchise-composition__item-title {
+  margin-bottom: 12px;
+
+  text-align: left;
+}
+.franchise-composition__item-paragraph {
+  text-align: left;
+}
+.franchise-composition__slider-arrows {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .franchise-composition__slider::after {
+    content: none;
+  }
+}
+@media (max-width: 1000px) {
+  .franchise-composition__slider.swiper {
+    margin-right: -15px;
+  }
+}
+@media (max-width: 600px) {
+  .franchise-composition__inner {
+    margin-bottom: 9px;
+  }
+
+  .franchise-composition__content {
+    margin-top: 15px;
+  }
+
+  .franchise-composition__title {
+    margin-bottom: 18px;
+  }
+
+  .franchise-composition__item {
+    padding: 16px 10px 10px 21px;
+  }
+  .franchise-composition__item-title {
+    font-size: 20px;
+  }
+  .franchise-composition__item-paragraph {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .franchise-composition__slider-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+}

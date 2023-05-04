@@ -1,0 +1,22 @@
+.contact-form-1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  width: 100%;
+}
+.contact-form-1__input {
+  margin-bottom: 10px;
+}
+
+.contact-form-1__button {
+  margin-top: 25px;
+  padding: 10px 8px;
+}
+
+@media (max-width: 460px) {
+  .contact-form-1__button {
+    box-sizing: border-box;
+    padding: 8px 6px;
+    max-width: 180px;
+  }
+}

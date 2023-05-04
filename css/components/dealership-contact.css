@@ -1,0 +1,75 @@
+@import "./contact-form-1.css";
+.dealership-contact {
+  padding-top: 20px;
+}
+.dealership-contact__inner {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  padding: 50px 50px 30px 66px;
+  margin-bottom: 51px;
+  -webkit-border-radius: var(--default-border-radius);
+     -moz-border-radius: var(--default-border-radius);
+          border-radius: var(--default-border-radius);
+
+  background-image: url("../../images/dealirship-contact-bg--pc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.dealership-contact__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(27,27,35,0.8);
+  background: -moz-linear-gradient(left, rgba(27,27,35,0.8) 25%, rgba(27,27,35,0) 65%);
+  background: -webkit-gradient(left top, right top, color-stop(25%, rgba(27,27,35,0.8)), color-stop(65%, rgba(27,27,35,0)));
+  background: -webkit-linear-gradient(left, rgba(27,27,35,0.8) 25%, rgba(27,27,35,0) 65%);
+  background: -o-linear-gradient(left, rgba(27,27,35,0.8) 25%, rgba(27,27,35,0) 65%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(27,27,35,0.8)), color-stop(65%, rgba(27,27,35,0)));
+  background: linear-gradient(to right, rgba(27,27,35,0.8) 25%, rgba(27,27,35,0) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b23', endColorstr='#1b1b23', GradientType=1 );
+}
+.dealership-contact__title {
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 120%;
+  position: relative;
+  z-index: 2;
+}
+.dealership-contact__form {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .dealership-contact__inner {
+    min-height: 360px;
+    padding: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .dealership-contact__inner {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 460px) {
+  .dealership-contact__inner {
+    padding: 15px;
+background-position: 72% center;
+  }
+  .dealership-contact__inner::before {
+    width: 80%;
+  }
+}

@@ -1,0 +1,308 @@
+@import "./video.css";
+
+.unique-technologies__inner {
+  margin-bottom: 60px;
+}
+.unique-technologies__content {
+  margin-top: 56px;
+}
+.unique-technologies__top {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 110px;
+}
+.unique-technologies__card {
+  position: relative;
+  max-width: 624px;
+  box-sizing: border-box;
+  padding: 45px 30px 45px 49px;
+}
+/* Связывающая линия */
+.unique-technologies__card::after {
+  content: "";
+  position: absolute;
+  right: -142px;
+  top: 38%;
+  width: 200px;
+  height: 150px;
+  z-index: -1;
+
+  background-image: url(./../../images/decorative-tie-line.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+/* Блик */
+.unique-technologies__card::before {
+  content: "";
+  position: absolute;
+  right: -1%;
+  top: 32%;
+  width: 14px;
+  height: 100px;
+  z-index: 3;
+  background-image: url(./../../images/blink-vertical.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.unique-technologies__title {
+  margin-bottom: 37px;
+  text-align: left;
+}
+.unique-technologies__paragraph {
+  max-width: 510px;
+
+  text-align: justify;
+}
+.unique-technologies__paragraph:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/*  */
+
+.unique-technologies__laptop-with-video {
+  position: absolute;
+  right: 0;
+  max-width: 630px;
+  width: 100%;
+}
+/* Блин на ноутбуке */
+
+.unique-technologies__laptop-with-video::after {
+  content: "";
+  position: absolute;
+  left: 8.1%;
+  top: 190px;
+  width: 14px;
+  height: 100px;
+  z-index: 5;
+  background-image: url(./../../images/blink-vertical.png);
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.unique-technologies__laptop-wrapper {
+  position: absolute;
+  z-index: 5;
+}
+.unique-technologies__laptop {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.unique-technologies__video-wrapper {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+
+  padding: 24.5% 24.5%;
+  max-width: 173px;
+  margin: 0 auto;
+}
+.unique-technologies__video-wrapper .video__preview-button {
+  width: 50px;
+  height: 50px;
+}
+
+/* form */
+
+.unique-technologies__contact-title {
+  margin-bottom: 5px;
+}
+.unique-technologies__contact-paragraph {
+  max-width: 666px;
+  margin: 0 auto 52px auto;
+}
+.unique-technologies__contact-paragraph br {
+  display: none;
+}
+.unique-technologies__form {
+  max-width: 935px;
+  margin: 0 auto;
+}
+.unique-technologies__form-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 40px;
+}
+.unique-technologies__form-input {
+  padding: 10px 21px;
+}
+.unique-technologies__form-button {
+  padding: 10px 21px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1315px) {
+  .unique-technologies__card::after {
+    width: 281px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .unique-technologies__top {
+    grid-gap: 50px;
+  }
+  .unique-technologies__card {
+    max-width: 560px;
+    padding: 35px 30px 35px 35px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 594px;
+  }
+  .unique-technologies__laptop-with-video::after {
+    content: none;
+  }
+}
+@media (max-width: 1200px) {
+    .unique-technologies__paragraph {
+    text-align: left;
+    }
+  }
+
+@media (max-width: 1100px) {
+  .unique-technologies__laptop-with-video {
+    max-width: 500px;
+  }
+  .unique-technologies__video-wrapper {
+    padding: 24.5% 20.5%;
+  }
+}
+@media (max-width: 1000px) {
+  .unique-technologies__top {
+    margin-bottom: 40px;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    grid-template-areas:
+      "laptop"
+      "card";
+  }
+  .unique-technologies__content {
+    margin-top: 12px;
+  }
+  .unique-technologies__laptop-with-video {
+    position: relative;
+    grid-area: laptop;
+  }
+  .unique-technologies__video-wrapper {
+    height: 0;
+    width: 0;
+    padding: 24.5% 38.5%;
+  }
+
+  .unique-technologies__card::before {
+    content: none;
+  }
+  .unique-technologies__card::after {
+    content: none;
+  }
+
+  .unique-technologies__form-inputs {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+  }
+  .unique-technologies__form-button {
+    max-width: 300px;
+    /* width: 100%; */
+  }
+}
+@media (max-width: 600px) {
+  .unique-technologies__inner {
+    margin-bottom: 27px;
+  }
+
+  .unique-technologies__top {
+    grid-template-rows: 250px 1fr;
+    grid-gap: 0;
+    margin-bottom: 20px;
+  }
+  .unique-technologies__card {
+    padding: 20px;
+  }
+  .unique-technologies__title {
+    margin-bottom: 15px;
+
+    text-align: center;
+  }
+  .unique-technologies__paragraph {
+    text-align: center;
+  }
+  .unique-technologies__paragraph:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 400px;
+  }
+
+  .unique-technologies__form {
+    max-width: 225px;
+  }
+  .unique-technologies__form-inputs {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0 auto 10px auto;
+  }
+  .unique-technologies__form-button {
+    max-width: 300px;
+    width: 100%;
+  }
+  .unique-technologies__contact-paragraph {
+    margin: 0 auto 22px auto;
+    font-size: 16px;
+  }
+  .unique-technologies__contact-title {
+    max-width: 230px;
+    margin: 0 auto 12px auto;
+  }
+}
+@media (max-width: 460px) {
+  .unique-technologies__top {
+    grid-template-rows: 210px 1fr;
+    grid-gap: 20px;
+  }
+
+  .unique-technologies__laptop-with-video {
+    max-width: 360px;
+  }
+  .unique-technologies__video-wrapper {
+    top: 10px;
+  }
+
+  .unique-technologies__form-inputs {
+    grid-gap: 7px;
+    margin-bottom: 7px;
+  }
+  .unique-technologies__form-input {
+    padding: 6px 21px;
+  }
+  .unique-technologies__form-button {
+    padding: 6px;
+  }
+
+  .unique-technologies__contact-paragraph br {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .unique-technologies__top {
+    grid-template-rows: 180px 1fr;
+    grid-gap: 5px;
+  }
+  .unique-technologies__laptop-with-video {
+    max-width: 300px;
+  }
+}

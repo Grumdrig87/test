@@ -1,0 +1,131 @@
+.stages-of-work__inner {
+  margin-bottom: 32px;
+}
+.stages-of-work__content {
+  margin-top: 28px;
+}
+.stages-of-work__title {
+  margin-bottom: 46px;
+}
+.stages-of-work__slider.swiper {
+  display: none;
+}
+.stages-of-work__list--desktop {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.stages-of-work__item {
+  padding: 25px;
+  min-height: 250px;
+}
+.stages-of-work__num {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin: -2px 0px -8px 0px;
+
+  font-size: 63px;
+  font-weight: 700;
+  font-family: "Mulish";
+  text-align: left;
+
+  color: var(--main-text-color);
+}
+
+.stages-of-work__blink-line {
+  height: 20px;
+  margin-bottom: 9px;
+}
+
+.stages-of-work__icon {
+  display: inline-block;
+  width: 49px;
+  height: 73px;
+  margin-right: -10px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stages-of-work__icon--01 {
+  background-image: url(../../images/icons/message.png);
+}
+.stages-of-work__icon--02 {
+  background-image: url(../../images/icons/camera.png);
+}
+.stages-of-work__icon--03 {
+  background-image: url(../../images/icons/list.png);
+}
+.stages-of-work__icon--04 {
+  background-image: url(../../images/icons/calculate.png);
+}
+.stages-of-work__icon--05 {
+  background-image: url(../../images/icons/gears.png);
+}
+.stages-of-work__icon--06 {
+  background-image: url(../../images/icons/hands.png);
+}
+.stages-of-work__description {
+  text-align: left;
+}
+
+@media (max-width: 1260px) {
+  .stages-of-work__item {
+    padding: 15px;
+  }
+}
+@media (max-width: 1100px) {
+  .stages-of-work__list--desktop {
+    display: grid;
+    grid-gap: 20px;
+    max-width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .stages-of-work__num {
+    font-size: 56px;
+  }
+  .stages-of-work__item {
+    padding: 20px;
+    min-height: 225px;
+  }
+  .stages-of-work__icon {
+    width: 58px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .stages-of-work__list--desktop {
+    display: none;
+  }
+  .stages-of-work__slider.swiper {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .stages-of-work__content {
+    margin-top: 5px;
+  }
+
+  .stages-of-work__title {
+    margin-bottom: 15px;
+  }
+
+  .stages-of-work__item {
+    padding: 15px;
+    min-height: 200px;
+  }
+  .stages-of-work__num {
+    font-size: 46px;
+    margin-bottom: 5px;
+  }
+  .stages-of-work__icon {
+    width: 48px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../components/hero.css";
+@import "../components/our-mission.css";
+@import "../components/results.css";
+@import "../components/our-clients.css";
+@import "../components/about-us.css";
+@import "../components/stages-of-work.css";
+
+@import "../components/unique-offers.css"; /*Внутри unique offers используются @import "./survey.css"; @import "./cooperation-with-us.css"; */
+
+@import "../components/press-center.css";
+@import "../components/quiz.css";

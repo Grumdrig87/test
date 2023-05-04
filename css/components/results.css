@@ -1,0 +1,23 @@
+@import "./results-list.css";
+.results__inner {
+  margin-bottom: 32px;
+}
+.results__title {
+  margin-bottom: 38px;
+}
+.results__paragraph {
+  max-width: 1110px;
+  margin: 0 auto 46px auto;
+}
+.results__list {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .results__title {
+    margin-bottom: 18px;
+  }
+  .results__paragraph {
+    margin-bottom: 18px;
+  }
+}
